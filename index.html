@@ -1,80 +1,16 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="ko">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Peastbump. — 패션잡화</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Fashion Site</title>
   <link rel="stylesheet" href="styles.css" />
-  <meta name="description" content="미니멀하고 트렌디한 패션잡화 쇼핑몰 데모" />
 </head>
 <body>
-  <header class="site-header">
-    <div class="container">
-      <a class="logo" href="/">Quiet & Co.</a>
-      <nav class="nav">
-        <button id="cart-button" class="cart-btn" aria-label="장바구니">
-          👜 <span id="cart-count">0</span>
-        </button>
-      </nav>
-    </div>
-  </header>
+  <h1>안녕하세요! 패션 사이트입니다 🎨</h1>
+  <p>이 사이트는 GitHub Pages로 배포되었습니다!</p>
+  <button onclick="alert('버튼 클릭!')">테스트 버튼</button>
 
-  <main class="container">
-    <section class="hero">
-      <h1>미니멀 · 트렌디 · 가벼운</h1>
-      <p>작은 디테일이 큰 차이를 만듭니다. 기본에 충실한 패션잡화 컬렉션.</p>
-    </section>
-
-    <section>
-      <h2 class="section-title">베스트셀러</h2>
-      <div id="product-grid" class="product-grid"></div>
-    </section>
-
-    <section class="about">
-      <h3>배송 · 결제</h3>
-      <p>한국(대한민국) 기준 실배송, 결제는 카드/간편결제 연동 가능(Stripe 예시 제공).</p>
-    </section>
-  </main>
-
-  <!-- Cart Modal -->
-  <div id="cart-modal" class="cart-modal" aria-hidden="true">
-    <div class="cart-panel">
-      <button id="close-cart" class="close">✕</button>
-      <h3>장바구니</h3>
-      <div id="cart-items" class="cart-items"></div>
-
-      <div class="cart-summary">
-        <div class="summary-row"><span>상품 합계</span><span id="subtotal">₩0</span></div>
-        <div class="summary-row"><span>배송비</span><span id="shipping">₩3,000</span></div>
-        <div class="summary-row total"><span>총 합계</span><span id="total">₩0</span></div>
-        <small id="notice">※ 결제를 진행하려면 주문자 정보 입력 후 서버 연동이 필요합니다.</small>
-      </div>
-
-      <form id="checkout-form" class="checkout-form">
-        <label>이름
-          <input name="name" required />
-        </label>
-        <label>연락처
-          <input name="phone" required />
-        </label>
-        <label>주소
-          <input name="address" required />
-        </label>
-
-        <div class="buttons">
-          <button type="button" id="checkout-btn" class="btn primary">결제하기</button>
-          <button type="button" id="clear-cart" class="btn">비우기</button>
-        </div>
-      </form>
-    </div>
-  </div>
-
-  <footer class="site-footer">
-    <div class="container">
-      <p>© <span id="year"></span> Quiet & Co. — 미니멀한 잡화</p>
-    </div>
-  </footer>
-
-  <script src="app.js" defer></script>
+  <script src="app.js"></script>
 </body>
 </html>
