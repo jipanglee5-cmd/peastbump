@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>결제하기 | PEASTBUMP</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container">
+      <div class="logo"><a href="index.html">PEASTBUMP</a></div>
+      <nav class="nav">
+        <a href="index.html#shop">Shop</a>
+        <a href="index.html#about">About</a>
+        <a href="index.html#contact">Contact</a>
+        <a href="cart.html" class="cart-btn">🛒</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container checkout-page">
+    <h1>결제하기</h1>
+
+    <form class="checkout-form">
+      <h2>배송 정보</h2>
+      <label>이름</label>
+      <input type="text" placeholder="홍길동" required />
+
+      <label>주소</label>
+      <input type="text" placeholder="서울특별시 강남구 ..." required />
+
+      <label>전화번호</label>
+      <input type="tel" placeholder="010-1234-5678" required />
+
+      <h2>결제 수단</h2>
+      <label><input type="radio" name="payment" checked /> 신용카드</label>
+      <label><input type="radio" name="payment" /> 카카오페이</label>
+      <label><input type="radio" name="payment" /> 무통장입금</label>
+
+      <div class="summary">
+        <p><strong>총 결제 금액:</strong> ₩88,000</p>
+      </div>
+
+      <button type="submit" class="btn primary">결제 완료</button>
+    </form>
+  </main>
+
+  <footer class="site-footer">
+    <p>© 2025 PEASTBUMP. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>

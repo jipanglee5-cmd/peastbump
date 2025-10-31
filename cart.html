@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>장바구니 | PEASTBUMP</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container">
+      <div class="logo"><a href="index.html">PEASTBUMP</a></div>
+      <nav class="nav">
+        <a href="index.html#shop">Shop</a>
+        <a href="index.html#about">About</a>
+        <a href="index.html#contact">Contact</a>
+        <a href="cart.html" class="cart-btn">🛒</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container cart-page">
+    <h1>장바구니</h1>
+
+    <div class="cart-list">
+      <div class="cart-item">
+        <img src="https://picsum.photos/120/120?1" alt="크로스백">
+        <div class="cart-info">
+          <h3>데일리 미니 크로스백</h3>
+          <p>₩49,000</p>
+        </div>
+        <div class="cart-qty">
+          <input type="number" min="1" value="1" />
+        </div>
+        <div class="cart-total">₩49,000</div>
+      </div>
+
+      <div class="cart-item">
+        <img src="https://picsum.photos/120/120?2" alt="지갑">
+        <div class="cart-info">
+          <h3>심플 가죽 지갑</h3>
+          <p>₩39,000</p>
+        </div>
+        <div class="cart-qty">
+          <input type="number" min="1" value="1" />
+        </div>
+        <div class="cart-total">₩39,000</div>
+      </div>
+    </div>
+
+    <div class="cart-summary">
+      <p><strong>총 금액:</strong> ₩88,000</p>
+      <a href="checkout.html" class="btn primary">결제하기</a>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <p>© 2025 PEASTBUMP. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
